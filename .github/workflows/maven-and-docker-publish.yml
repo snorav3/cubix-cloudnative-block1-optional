@@ -10,9 +10,9 @@ on:
     - 'ci/**'
 
 jobs:
-  maven:
-    if_merged:
-      if: github.event.pull_request.merged == true
+  if_merged:
+    if: github.event.pull_request.merged == true
+    maven:    
       runs-on: ubuntu-latest
       permissions:
         contents: read
