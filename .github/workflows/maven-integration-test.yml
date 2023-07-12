@@ -4,7 +4,7 @@
 name: Maven integration test
 
 on: 
-  pullrequest:
+  pull_request:
     branches:
     - 'ci/**'
 
