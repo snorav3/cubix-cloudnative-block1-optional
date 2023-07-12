@@ -4,10 +4,9 @@
 name: Maven and Docker publish
 
 on: [push, merge]
-  push:
-    branches:
-    - main
-    - 'ci/**'
+  branches:
+  - main
+  - 'ci/**'
 
 jobs:
   maven:
